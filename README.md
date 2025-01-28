@@ -6,12 +6,12 @@ This project demonstrates how to set up an ETL (Extract, Transform, Load) proces
 
 ## Airflow DAG Setup
 
-The DAG runs the ETL process daily, starting from November 8, 2020. It uses the PythonOperator to call the `run_twitter_etl` function.
+The DAG runs the ETL process daily. It uses the PythonOperator to call the `run_twitter_etl` function.
 
 ## Twitter ETL Function (`run_twitter_etl`)
 
 - Authenticates to Twitter using Tweepy.
-- Fetches up to 200 tweets from @elonmusk's timeline.
+- Fetches up to 200 tweets from users timeline.
 - Refines the tweet data by selecting specific fields.
 - Saves the refined data as a CSV file.
 
